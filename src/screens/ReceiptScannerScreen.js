@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Alert, ActivityIndicator } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
-import { extractReceiptData } from '../services/geminiService';
+import { analisarReciboComGemini } from '../services/gemini';
 import { addExpense } from '../database/database';
 
 export function ReceiptScannerScreen({ navigation }) {
@@ -36,7 +36,7 @@ export function ReceiptScannerScreen({ navigation }) {
 
     setLoading(true);
     try {
-      const data = await extractReceiptData(base64Image);
+      const data = await analisarReciboComGemini(base64Image);
       
       await addExpense({
         amount: data.amount,
