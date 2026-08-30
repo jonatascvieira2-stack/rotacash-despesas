@@ -22,8 +22,15 @@
       "permissions": [
         "CAMERA",
         "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE"
+        "WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
       ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "68cbaef-aab6-4031-9c1e-f..." 
+      }
     }
   }
 }
