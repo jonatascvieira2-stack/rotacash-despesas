@@ -58,11 +58,12 @@ export function HomeScreen({ navigation }) {
           <Text style={styles.btnText}>+ Manual</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity 
-         style={styles.button} 
-           onPress={() => navigation.navigate('Garage')}>
-            <Text style={styles.btnText}>🏍️ Minha Garagem</Text>
-        </TouchableOpacity>
+       <TouchableOpacity 
+  style={[styles.button, { backgroundColor: '#8B5CF6', minWidth: 100 }]} 
+  onPress={() => navigation.navigate('Garage')}
+>
+  <Text style={styles.buttonText}>🏍️ Garagem</Text>
+</TouchableOpacity>
 
         <TouchableOpacity 
           style={[styles.btn, styles.btnOcr]}
@@ -130,6 +131,7 @@ const styles = StyleSheet.create({
     padding: 14,
     borderRadius: 12,
     flexDirection: 'row',
+    flexWrap: 'wrap',
     marginBottom: 8,
     alignItems: 'center',
     shadowColor: '#000',
