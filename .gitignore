@@ -1,1 +1,19 @@
 node_modules
+
+# dependências
+node_modules/
+
+# cache local do expo
+.expo/
+
+# pastas nativas geradas pelo prebuild
+android/
+ios/
+
+# builds locais
+dist/
+build/
+
+# arquivos de ambiente local
+.env
+.env.local
