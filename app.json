@@ -10,7 +10,7 @@
       "backgroundColor": "#2563EB"
     },
     "plugins": [
-      "expo-sqlite",
+
       [
         "expo-camera",
         {
