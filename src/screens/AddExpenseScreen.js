@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, Alert, ScrollView } from 'react-native';
 import { addExpense } from '../database/database';
+import { analisarReciboComGemini } from '../services/gemini';
 
 export function AddExpenseScreen({ navigation }) {
   const [amount, setAmount] = useState('');
