@@ -59,6 +59,12 @@ export function HomeScreen({ navigation }) {
         </TouchableOpacity>
 
         <TouchableOpacity 
+         style={styles.button} 
+           onPress={() => navigation.navigate('Garage')}>
+            <Text style={styles.btnText}>🏍️ Minha Garagem</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity 
           style={[styles.btn, styles.btnOcr]}
           onPress={() => navigation.navigate('ReceiptScanner')}
         >
